@@ -15,10 +15,10 @@ $ npm install @neogeek/videoplayer.js
 ```html
 <script
     type="module"
-    src="https://unpkg.com/@neogeek/videoplayer.js@1.0.0/index.js"
+    src="https://unpkg.com/@neogeek/videoplayer.js@1.1.0/index.js"
 ></script>
 <script type="module">
-    import { setupVideoPlayer } from 'https://unpkg.com/@neogeek/videoplayer.js@1.0.0/index.js';
+    import { setupVideoPlayer } from 'https://unpkg.com/@neogeek/videoplayer.js@1.1.0/index.js';
 
     setupVideoPlayer(document.querySelector('video'), {
         videoInputDeviceSelect: document.querySelector('#videoinput'),
