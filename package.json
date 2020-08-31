@@ -1,0 +1,23 @@
+{
+  "name": "@neogeek/videoplayer.js",
+  "description": "Display video in the browser with variable input sources.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio"
+  ],
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
+    }
+  ],
+  "homepage": "https://github.com/neogeek/videoplayer.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/videoplayer.js.git"
+  }
+}
