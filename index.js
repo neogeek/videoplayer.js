@@ -20,19 +20,19 @@ const setVideoPlayerObject = video => {
     const videoInputDeviceId = getDeviceId('videoInput');
     const audioInputDeviceId = getDeviceId('audioInput');
 
-    navigator.mediaDevices
+    return navigator.mediaDevices
         .getUserMedia({
             video: videoInputDeviceId ? { deviceId: videoInputDeviceId } : true,
             audio: audioInputDeviceId ? { deviceId: audioInputDeviceId } : true
         })
         .then(stream => {
             video.srcObject = stream;
+
+            return stream;
         });
 };
 
 const setupVideoPlayer = (video, options = {}) => {
-    setVideoPlayerObject(video);
-
     const devices = navigator.mediaDevices.enumerateDevices();
 
     if (options.videoInputDeviceSelect) {
@@ -74,5 +74,7 @@ const setupVideoPlayer = (video, options = {}) => {
             }
         );
     }
+
+    return setVideoPlayerObject(video);
 };
 export { setVideoPlayerObject, setupVideoPlayer };
