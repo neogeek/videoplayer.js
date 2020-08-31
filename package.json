@@ -1,7 +1,7 @@
 {
   "name": "@neogeek/videoplayer.js",
   "description": "Display video in the browser with variable input sources.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
